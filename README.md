@@ -1,8 +1,11 @@
-##  Push Menu Wordpress
+#  Interactive Push Menu for Wordpress
 
-Ubuntu
+System Requirements 
+
 npm version 8.9.0
 
-#  To begin 
+##  Start Here
 
 npm install 
+
+This project is not complete... 
