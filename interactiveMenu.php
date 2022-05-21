@@ -2,7 +2,7 @@
 
 /*
  Plugin Name: Interactive Menu  
- Description: Interactive menu Widget for information reguarding website. 
+ Description: Interactive Menu Widget for information reguarding website. 
  Version: 1.0.0
  Author: Milan
  Author URI: https://g-milan.com
@@ -47,17 +47,17 @@ class interactive_menu extends WP_Widget {
     public function widget( $args, $instance ) {
         $title = apply_filters( 'widget_title', $instance['title'] );
          
-        // before and after widget arguments are defined by themes
         echo $args['before_widget'];
         if ( ! empty( $title ) )
-        echo $args['before_title'] . $title . $args['after_title'];
-         
-        // This is where you run the code and display the output
         echo __( '
-        
-        <div class="menuClass" id="menuID">
-            <i class="fa fa-arrow-circle-down fa-3x rotates" id="iconID"> </i>
-        </div>',
+        <div class="widget-wrap"
+        <div class="menuClass icon-widget" id="menuID">
+            <i class="fa fa-arrow-circle-down fa-3x rotates" style="color:#ffffff;background-color:transparent;" id="iconID"> </i>
+        <br>
+        <h4 class="widget-title">' . $title . '</h4>
+        </div>
+        </div>
+        ',
          
          'wpb_widget_domain'
          
@@ -97,8 +97,9 @@ class interactive_menu extends WP_Widget {
      
 } 
  
-// Register and load 
+// Register and load the widget
 function wpb_load_widget() {
     register_widget( 'interactive_menu' );
 }
 add_action( 'widgets_init', 'wpb_load_widget' );
+

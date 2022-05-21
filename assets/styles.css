@@ -8,3 +8,20 @@
     -webkit-transform:rotate(180deg);
     transform:rotate(180deg); /* How many times it'll rotate = degrees÷360 */
 }
+
+.hidden {
+    opacity: 0%;
+    transition:3.5s; /* Transition duration */
+}
+
+.show {
+    opacity: 100%;
+    transition:6s; /* Transition duration */
+}
+
+
+
+/* only use for local machine */ 
+body {
+    margin: 15%; 
+}
