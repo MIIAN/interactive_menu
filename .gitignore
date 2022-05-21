@@ -1,4 +1,8 @@
+# Ignore these files when pushing to git repo 
+
 node_modules
 node_modules/
-*git
+
+.npm 
+
 

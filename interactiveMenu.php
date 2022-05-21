@@ -36,8 +36,7 @@ class InteractiveMenu
         // add stylesheet loaded last*/
         add_action( 'wp_enqueue_scripts', array( $this, 'enqueue') );  
         // Register interactive menu into wordpress
-        add_action( 'init', array( $this, 'interactiveMenuRegister'); 
-
+        add_action( 'init', array( $this, 'interactiveMenuRegister')); 
     }
 
     function interactiveMenuRegister() {
