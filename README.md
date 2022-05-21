@@ -1,8 +1,6 @@
 #  Interactive Push Menu for Wordpress
 
-System Requirements 
-
-npm version 8.9.0
+System Requirements npm version 8.9.0
 
 ##  Start Here
 
