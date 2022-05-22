@@ -6,4 +6,6 @@ System Requirements npm version 8.9.0
 
 npm install 
 
-This project is not complete... 
+Download project and double click indes.html file to view in browser.  
+
+Use Php files to upload to wordpress plugin folder. 
