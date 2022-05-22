@@ -41,6 +41,9 @@ class interactive_menu extends WP_Widget {
         );
         //load stylesheet.
         add_action( 'wp_enqueue_scripts', array( $this, 'enqueue') ); 
+        //load Menu. init breaks widgets_init dosn't load?? 
+        //add_action( 'need to hook in to something here so it loads in with other menu items. Work around: assets/'Code Snippets'/theme.php file', array( $this, 'register_interactive_menu') ); 
+        //add_action( 'interactive_menu', array( $this, 'interactive_menu_placement'));
     }
      
     // Front-End
@@ -50,6 +53,7 @@ class interactive_menu extends WP_Widget {
         echo $args['before_widget'];
         if ( ! empty( $title ) )
         echo __( '
+        '. do_action('interactive_menu') . '
         <div class="widget-wrap"
         <div class="menuClass icon-widget" id="menuID">
             <i class="fa fa-arrow-circle-down fa-3x rotates" style="color:#ffffff;background-color:transparent;" id="iconID"> </i>
@@ -57,11 +61,7 @@ class interactive_menu extends WP_Widget {
         <h4 class="widget-title">' . $title . '</h4>
         </div>
         </div>
-        ',
-         
-         'wpb_widget_domain'
-         
-         );
+        ');
         echo $args['after_widget'];
     }
      
@@ -95,6 +95,21 @@ class interactive_menu extends WP_Widget {
         wp_enqueue_script( 'scripts', plugins_url('/assets/main.js', __FILE__ ), array('jquery'), '1.0', true ); 
     }
      
+    /* Interactive Menu
+    function register_interactive_menu() {
+        register_nav_menu( array(
+            'interactive_menu_plugin' => __( 'Interactive Menu Plugin', 'text_domain' ) 
+            )); 
+    }
+    
+    function interactive_menu_placement() {
+        wp_nav_menu( array(
+            'container_id' => 'interactiveMenu',
+            'container_class' => 'interactive_menu_hidden',
+            'theme_location' => 'interactive_menu_plugin',
+        ));
+    }
+    */
 } 
  
 // Register and load the widget
@@ -102,4 +117,7 @@ function wpb_load_widget() {
     register_widget( 'interactive_menu' );
 }
 add_action( 'widgets_init', 'wpb_load_widget' );
+
+
+
 
