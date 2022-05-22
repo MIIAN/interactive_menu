@@ -1,28 +1,71 @@
+/* Interactive Menu 
+**table of contents:
+   -  minimal css for functionality and testing
+   -  iphone 13 mini changes
+   -  ipad changes
+   -  business pro / genesis themes changes
+   -  html margin for local machine testing only and shouldn't be used in a wordpress site.
+**
+*/
+
+/* Minimal css */
 .rotates{
-    transition:2.5s; /* Transition duration */
+    transition:2.5s; 
 }
 .rotatesOnClick{
+    transition: 1s; 
     -o-transform:rotate(180deg);
     -ms-transform:rotate(180deg);
     -moz-transform:rotate(180deg);
     -webkit-transform:rotate(180deg);
-    transform:rotate(180deg); /* How many times it'll rotate = degrees÷360 */
+    transform:rotate(180deg); 
 }
 
 .interactive_menu_hidden {
     opacity: 0%;
-    transition:3.5s; /* Transition duration */
+    transition:3.5s;
+    visibility: hidden;  
 }
 
 .show_interactive_menu {
     opacity: 100%;
-    transition:6s; /* Transition duration */
+    transition:1s; 
 }
 
+/** Small screens **
+ /*  iphone 13 Mini  
+ @media screen and (max-width: 745px) {
+ .show_interactive_menu {
+	margin-top: -30%; 
+}
+	 .interactive_menu_hidden {
+		 margin-top: -30%; 
+	 }
+}
+
+ /*  ipad  
+ @media screen and (max-width:810px) {
+	.show_interactive_menu {
+		margin-top: -38%; 
+	}
+	.interactive_menu_hidden {
+		margin-top: -38%; 
+	}
+}
+
+/* business pro / genesis theme site wordpress
+.show_interactive_menu ul{
+	display: flex; 
+	justify-content: center; 
+}
+
+.interactive_menu_hidden ul {
+	display: flex;
+	justify-content: center; 
+} 
 
 
-
-/* only use for local machine */ 
+/* index.html local machine test code only */
 body {
     margin: 15%; 
 }
