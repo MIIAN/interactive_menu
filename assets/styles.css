@@ -33,19 +33,7 @@
 }
 
 /** Small screens **
- /*  iphone 13 Mini  
- @media screen and (max-width: 745px) {
-    .show_interactive_menu {
-        position:relative;
-        background-color: #232c39;
-        margin-top: -90%;
-    }
-    .interactive_menu_hidden {
-        margin-top: -35%; 
-    }
-}
-
- /*  ipad  
+ /*  ipad  *
  @media screen and (max-width:810px) {
 	.show_interactive_menu {
 		margin-top: -38%; 
@@ -55,7 +43,24 @@
 	}
 }
 
-/* business pro / genesis theme site wordpress
+ /*  iphone 13 Mini *
+ @media screen and (max-width: 745px) {
+	 .show_interactive_menu {
+		 position:relative;
+		 background-color: #232c39;
+		 margin-top: -100%;
+		 height: 260px;
+		 padding-top: 20px;
+	 }
+	 .interactive_menu_hidden {
+	     position:relative;
+		 margin-top: -138%;
+		 height: 328px;
+		 padding-top: 48; 
+	 }
+ }
+
+/* business pro / genesis themes wordpress *
 .show_interactive_menu ul{
 	display: flex; 
 	justify-content: center; 
@@ -65,7 +70,6 @@
 	display: flex;
 	justify-content: center; 
 } 
-
 
 /* index.html local machine test code only */
 body {
