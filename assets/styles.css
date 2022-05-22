@@ -9,15 +9,16 @@
     transform:rotate(180deg); /* How many times it'll rotate = degrees÷360 */
 }
 
-.hidden {
+.interactive_menu_hidden {
     opacity: 0%;
     transition:3.5s; /* Transition duration */
 }
 
-.show {
+.show_interactive_menu {
     opacity: 100%;
     transition:6s; /* Transition duration */
 }
+
 
 
 
