@@ -22,13 +22,13 @@
 }
 
 .interactive_menu_hidden {
-    opacity: 0%;
+    opacity: 0;
     transition:3.5s;
     visibility: hidden;  
 }
 
 .show_interactive_menu {
-    opacity: 100%;
+    opacity: 100;
     transition:1s; 
 }
 
@@ -38,10 +38,10 @@
     .show_interactive_menu {
         position:relative;
         background-color: #232c39;
-        margin-top: -100%;
+        margin-top: -90%;
     }
     .interactive_menu_hidden {
-        margin-top: -72%; 
+        margin-top: -35%; 
     }
 }
 
