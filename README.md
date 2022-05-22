@@ -4,8 +4,10 @@ System Requirements npm version 8.9.0
 
 ##  Start Here
 
-npm install 
+-download files
 
-Download project and double click index.html file to view in browser.  
+-npm install 
+
+-double click index.html file to view in browser.  
 
 Use php files for wordpress. 
