@@ -6,6 +6,6 @@ System Requirements npm version 8.9.0
 
 npm install 
 
-Download project and double click indes.html file to view in browser.  
+Download project and double click index.html file to view in browser.  
 
-Use Php files to upload to wordpress plugin folder. 
+Use php files for wordpress. 
