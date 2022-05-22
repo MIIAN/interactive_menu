@@ -35,12 +35,14 @@
 /** Small screens **
  /*  iphone 13 Mini  
  @media screen and (max-width: 745px) {
- .show_interactive_menu {
-	margin-top: -30%; 
-}
-	 .interactive_menu_hidden {
-		 margin-top: -30%; 
-	 }
+    .show_interactive_menu {
+        position:relative;
+        background-color: #232c39;
+        margin-top: -100%;
+    }
+    .interactive_menu_hidden {
+        margin-top: -72%; 
+    }
 }
 
  /*  ipad  
